@@ -1,0 +1,43 @@
+{% extends 'base.html '%}
+{% from "macros.html" import message %}
+{% block links%}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sign_up.css')}}">
+{% endblock %}
+
+{% block content %}
+    <div>  
+        {{ message() }}
+        <form method="POST">
+            {{ signup_form.csrf_token }}
+            {{ signup_form.name }}
+            <div class="info_card">
+                <div class="info_content">
+                    <h1 style="margin-bottom: 20px;"> What are you waiting for? </h1> 
+                    <span>
+                        <h2> Don't miss a thing. </h2>
+                        <h3> Connect now and start organizing your life. </h3>
+                    </span>
+                </div>
+            </div>
+
+            <div class="user_data">
+                <span style="font-size:x-large; margin-top: 2vh;">Sign Up</span>
+                <div class="user_inputs">
+                    {{ signup_form.username(class_="user_input", placeholder="Username") }}
+                    {{ signup_form.mail(class_="user_input", placeholder="Email") }}
+                    {{ signup_form.password(class_="user_input", placeholder="Password") }}
+                    {{ signup_form.submit(class_="user_login-button") }}
+                </div>
+                <div class="user_options">
+                    <label><input type="checkbox" name="checkbox" id="user_checkbox"> Remember me</label>
+                </div>
+                <hr>
+                <div class="user_singup">
+                    <a href="{{ url_for('auth.login') }}"> Log in </a>
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}
+{% block scripts %}
+{% endblock %}

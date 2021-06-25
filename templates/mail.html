@@ -1,0 +1,98 @@
+{% extends 'base.html'%}
+{% block styles %}
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap');
+
+*,
+*::after,
+*::before {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+    color: rgba(32, 20, 20, 0.3);
+}
+
+body {
+    
+    overflow: hidden;
+}
+
+header img {
+    width: 64px;
+}
+
+header {
+    background-color: #e7af00;
+    background-size: 100vw 100vh;
+    padding: 1vh;
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    color: rgba(32, 20, 20, 0.3);
+}
+
+footer {
+    background-color: #e7af00;
+    background-size: 100vw 100vh;
+    padding: 1vh;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 10vh;
+    color: rgba(32, 20, 20, 0.3);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 25vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.2vw solid rgba(32, 20, 20, 0.3);
+    border-radius: 1vw;
+    padding: 4vw;
+    color: rgba(32, 20, 20, 0.3);
+    -webkit-box-shadow: 3px 3px 30px 0px rgba(0,0,0,0.8); 
+    box-shadow: 3px 3px 30px 0px rgba(0,0,0,0.8);
+}
+
+.content h1,h2,h3 {
+    text-align: justify;
+}
+
+.content h1:first-child{
+    margin: 4vh 0px;
+}
+
+.code {
+    margin: 3vh 0px;
+    padding: 0.5vh 2vw;
+    border: 0.2vw solid rgba(32, 20, 20, 0.5);
+    border-radius: 1vw;
+}
+</style>
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="content">
+            <h1>Complete registration</h1>
+            <h3>This is the code that you need to complete your registration in Platzi-Tasks:</h3>
+            <div class="code">
+                <h1>{{ token[1] }}</h1>
+            </div>
+            <h3>If you didn't create a Platzi-Tasks account, please ignore this message.</h3>
+        </div>
+    </div>
+    <footer>
+    </footer>
+{% endblock %}

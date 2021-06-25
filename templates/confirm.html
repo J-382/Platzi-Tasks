@@ -1,0 +1,25 @@
+{% extends 'base.html '%}
+{% from "macros.html" import message %}
+
+{% block links%}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css')}}">
+{% endblock %}
+
+{% block content %}
+    <div>   
+        {{ message() }}
+        <form method="POST">
+            {{ confirm_form.csrf_token }}
+            {{ confirm_form.name }}
+            <div class="user_data">
+                <span style="font-size:x-large; margin-top: 2vh;">Confirmation token</span>
+                <div class="user_inputs">
+                    {{ confirm_form.token(class_="user_input", placeholder="Token") }}
+                    {{ confirm_form.submit(class_="user_login-button") }}
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}
+{% block scripts %}
+{% endblock %}

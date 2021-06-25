@@ -1,0 +1,46 @@
+.flashes {
+    z-index: 2;
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flash_item {
+    list-style: none;
+    width: 97%;
+    margin: 2px;
+    padding: 1vw 2vh;
+    border: 2px solid rgba(32, 20, 20,0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    transition: all 1s;
+    -webkit-box-shadow: 3px 3px 30px 0px rgba(0,0,0,0.8); 
+    box-shadow: 3px 3px 30px 0px rgba(0,0,0,0.8);
+}
+
+.flash_item.message p{
+    color: rgb(169, 224, 158);
+}
+
+.flash_item.error p{
+    color: rgb(243, 175, 172);
+}
+
+.flash_item label input{
+    opacity: 0;
+}
+
+.flash_item label:hover{
+    color: rgba(32, 20, 20,0.5);
+}
+
+.fadeout {
+    transform: translateY(50px);
+    opacity: 0;
+}

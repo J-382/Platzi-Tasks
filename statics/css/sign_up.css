@@ -1,0 +1,33 @@
+@import url('../css/login.css');
+@import url('../css/flashed.css');
+
+.info_card {
+    position: relative;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.info_content {
+    width: 40vw;
+    height: 40vh;
+    background-image: url('../images/joanna-kosinska-1_CMoFsPfso-unsplash.jpg');
+    background-size: 75vw 75vh;
+    background-position: -10vw -15vh;
+    border: 0.2vw solid rgba(32, 20, 20, 0.3);
+    border-right: none;
+    border-radius: 0.5vw 0vw 0vw 2vw;
+    transition: all 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    -webkit-box-shadow: 3px 3px 30px 0px rgba(0,0,0,0.8); 
+    box-shadow: 3px 3px 30px 0px rgba(0,0,0,0.8);
+}
+
+.info_content h1, h2, h3 {
+    color: rgba(32, 20, 20, 0.6);
+}

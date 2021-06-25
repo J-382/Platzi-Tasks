@@ -1,0 +1,14 @@
+{% macro message() %}
+{% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages %}
+    <ul class='flashes'>
+        {% for category, message in messages %}
+            <li class="flash_item {{ category }}">
+                <p>{{ message }}</p>
+                <label>X<input id=""type="checkbox" class="flash_checkbox"></label>
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}
+{% endwith %}
+{% endmacro %}

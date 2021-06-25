@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap');
+@import url('../css/flashed.css');
+
+*,
+*::after,
+*::before {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+    color: rgba(32, 20, 20, 0.3);
+}
+
+body {
+    background-image: url('../images/joanna-kosinska-1_CMoFsPfso-unsplash.jpg');
+    background-size: 100vw 100vh;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.user_data {
+    display: flex;
+    flex-direction: column;
+    border: 0.2vw solid rgba(32, 20, 20, 0.3);
+    border-radius: 1vw;
+    padding: 2vw;
+    background-color: white;
+    color: rgba(32, 20, 20, 0.3);
+    -webkit-box-shadow: 3px 3px 30px 0px rgba(0,0,0,0.8); 
+    box-shadow: 3px 3px 30px 0px rgba(0,0,0,0.8);
+}
+
+.user_inputs {
+    margin: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.user_input, .user_login-button {
+    margin-top: 4vh;
+    outline: none;
+    border: none;
+    padding: 1.5vh;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 2px solid rgba(32, 20, 20, 0.3);
+    color: rgba(32, 20, 20, 0.3);
+}
+
+.user_login-button {
+    border-radius: 50px;
+    width: 100%;
+    cursor: pointer;
+    height: 5vh;
+    text-align: center;
+    padding: 1px;
+    background-color: transparent;
+    background-image: url('../images/fill.png');
+    background-position: 0 -50%;
+    background-repeat: repeat-x;
+    background-size: 110% auto;
+    transition: 2s background-position ease;
+    border: 2px solid rgba(32, 20, 20, 0.3);
+}
+
+.user_login-button:hover {
+    background-position: 500% 100%;
+  }
+
+.user_options {
+    margin: 2vh;
+    font-size: xx-small;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user_options label {
+    display: flex;
+    align-items: center;
+}
+
+.user_options label input {
+    margin-right: 0.2vw;
+}
+
+header {
+    margin: 20px;
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    color: rgba(32, 20, 20, 0.3);
+}
+
+hr {
+    border: 1px solid rgba(32, 20, 20, 0.3);
+    margin: 0px 1.8vw;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+}
+
+.user_singup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-small;
+}
+
+header img {
+    width: 64px;
+}
