@@ -1,0 +1,26 @@
+{% extends 'base.html'%}
+{% from "macros.html" import message %}
+
+{% block links %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}"> 
+{% endblock %}
+
+{% block content %}
+    <p id="x"></p>
+    <p id="y"></p>
+    <div class="note">
+        <div class="note_toolbar">
+
+        </div>
+        <div class="note_content">
+            
+        </div>
+        <div class="note_foot-toolbar">
+            
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{{ url_for('static', filename='scripts/main.js')}}"></script>
+{% endblock %}

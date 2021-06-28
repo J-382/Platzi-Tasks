@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap');
+@import url('../css/flashed.css');
+
+*,
+*::after,
+*::before {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+    color: rgba(32, 20, 20, 0.3);
+}
+
+body {
+    background-image: url('../images/joanna-kosinska-1_CMoFsPfso-unsplash.jpg');
+    background-size: 100vw 100vh;
+}
+
+header {
+    margin: 20px;
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    color: rgba(32, 20, 20, 0.3);
+}
+
+header img {
+    width: 64px;
+}
+
+.note {
+    width: 12vw; 
+    height: 30vh; 
+    background-color:rgb(255, 255, 255); 
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+}
+
+
+.note_toolbar {
+    background-color: rgba(32, 20, 20, 0.2);
+    width: 100%;
+    height: 5vh; 
+}
+
+.note_content {
+    width: 100%;
+    height: 20vh;
+}
+
+.note_foot-toolbar {
+    margin: 1vw 1vh;
+    width: 100%;
+    height: 5vh;
+    border-top: 1px solid rgba(32, 20, 20, 0.2);
+}

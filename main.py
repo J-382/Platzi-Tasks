@@ -16,7 +16,7 @@ def test():
 @app.route('/app')
 @login_required
 def main_app():
-    return render_template("mail.html")
+    return render_template("main.html")
 
 @app.errorhandler(404)
 def not_foud(error):

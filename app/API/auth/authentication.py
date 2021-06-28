@@ -16,9 +16,10 @@ class AuthException(Exception):
 
 def login(username,password):
     user = UserModel.query(username)
+    print(user)
     if user == None:
         raise AuthException("User not exists")
-    elif user.is_active:
+    elif user.confirmed:
         if check_pass(user.password,password):
             login_user(user)
         else:

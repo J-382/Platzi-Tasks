@@ -37,6 +37,7 @@ def load_user(username):
         else:
             session['temp_user'] = user.username
             session['unconfirmed'] = True
+            user = None
     return user
 
 class BaseConfig:
@@ -58,8 +59,8 @@ class BaseConfig:
     MAIL_USE_SSL = True
 
     # gmail authentication
-    MAIL_USERNAME = "platzitasks@gmail.com"
-    MAIL_PASSWORD = "Joju1116."
+    MAIL_USERNAME = ''
+    MAIL_PASSWORD = '' "platzitasks@gmail.com""Joju1116."
 
     # mail accounts
     MAIL_DEFAULT_SENDER = 'platzitasks@gmail.com'
